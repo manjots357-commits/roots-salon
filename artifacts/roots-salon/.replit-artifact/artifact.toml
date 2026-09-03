@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "Roots Salon"
+description = "A cinematic premium salon website for Roots Salon, showcasing hair, beauty, grooming, bridal services, the academy, a virtual salon tour, and a guided booking experience."
+version = "1.0.0"
+id = "artifacts/roots-salon"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 25923
+
+[services.development]
+run = "pnpm --filter @workspace/roots-salon run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/roots-salon", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/roots-salon/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "25923"
+BASE_PATH = "/"

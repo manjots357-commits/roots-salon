@@ -1,0 +1,503 @@
+UPGRADE THE ROOTS SALON WEBSITE TO AN EVEN MORE PREMIUM, AWARD-WINNING EXPERIENCE.
+
+Do not redesign it into a generic salon website. Keep the existing BLACK + GOLD + ROOTS + FIRE + CINEMATIC 3D identity.
+
+Add the following advanced features:
+
+==================================================
+1. CINEMATIC 3D HERO
+==================================================
+
+Make the hero feel like a live 3D scene.
+
+The uploaded Golden Tree video remains the main visual.
+
+Add:
+- subtle floating golden particles
+- realistic embers
+- soft fire glow
+- animated roots
+- depth/parallax
+- mouse-based camera movement
+- slow cinematic zoom
+- subtle light rays
+
+The background should feel ALIVE while the user is on the page.
+
+Do not make the fire overpower the content.
+
+==================================================
+2. “ENTER THE ROOTS” INTERACTION
+==================================================
+
+Add a premium introductory interaction.
+
+When the website first loads:
+
+ROOTS logo appears in darkness.
+
+Golden roots slowly illuminate.
+
+Small particles move upward.
+
+Then the salon environment/video reveals behind it.
+
+Text:
+
+ENTER THE ROOTS
+
+On click/scroll, transition smoothly into the main website.
+
+Keep this animation short and skippable.
+
+==================================================
+3. BEFORE / AFTER EXPERIENCE
+==================================================
+
+Create an interactive Before / After section.
+
+Use salon-related images where appropriate.
+
+Create a draggable comparison slider.
+
+Heading:
+
+THE TRANSFORMATION
+
+Subheading:
+
+BEFORE → AFTER
+
+The slider should have a premium gold handle and smooth interaction.
+
+==================================================
+4. 3D SERVICE EXPLORER
+==================================================
+
+Instead of ordinary service cards, create an immersive service explorer.
+
+Categories:
+
+HAIR
+BEAUTY
+GROOMING
+BRIDAL
+
+When the user selects a category:
+
+- background changes
+- related image appears
+- 3D card rotates/reveals
+- service details animate in
+- gold lighting changes
+
+Add:
+
+BOOK THIS SERVICE
+
+CTA.
+
+==================================================
+5. SIGNATURE GOLDEN ROOTS CURSOR
+==================================================
+
+Create a custom desktop cursor.
+
+Normal cursor:
+small golden glowing point.
+
+When hovering over images:
+cursor expands.
+
+When hovering over buttons:
+cursor becomes a glowing ring.
+
+When moving through the hero:
+small golden particles subtly follow the cursor.
+
+Disable this on mobile/tablet.
+
+==================================================
+6. SCROLL STORYTELLING
+==================================================
+
+Make the entire website feel like one continuous cinematic story.
+
+Do NOT make sections feel disconnected.
+
+As the user scrolls:
+
+ROOTS
+↓
+SALON
+↓
+CRAFT
+↓
+BEAUTY
+↓
+TRANSFORMATION
+↓
+EXPERIENCE
+↓
+BOOKING
+
+Use GSAP ScrollTrigger to create smooth transitions between scenes.
+
+==================================================
+7. GOLDEN ROOTS TRANSITION
+==================================================
+
+Create a signature transition between major sections.
+
+Animated golden roots should appear from the bottom of the screen.
+
+The roots slowly grow across the screen.
+
+They then transform into:
+
+- golden lines
+- particles
+- light
+- image borders
+
+Then reveal the next section.
+
+Keep it elegant and subtle.
+
+==================================================
+8. INTERACTIVE SALON TOUR
+==================================================
+
+Create a section:
+
+EXPLORE THE SPACE
+
+Use uploaded salon interior/exterior images.
+
+Make it feel like a virtual salon tour.
+
+Add hotspots on images.
+
+Example:
+
+MIRROR STATIONS
+→
+PREMIUM STYLING AREA
+
+RECEPTION
+→
+WELCOME TO ROOTS
+
+GROOMING AREA
+→
+MEN’S GROOMING
+
+Clicking a hotspot opens a small animated information panel.
+
+==================================================
+9. PREMIUM GALLERY
+==================================================
+
+Make the gallery more experimental.
+
+Use the uploaded images.
+
+Create a horizontal scrolling gallery inside a vertical scroll section.
+
+Images should:
+- move at different speeds
+- have depth
+- slightly rotate
+- scale on hover
+- reveal captions
+
+Add:
+
+VIEW FULL GALLERY
+
+with a fullscreen cinematic gallery.
+
+==================================================
+10. FLOATING BOOK NOW BUTTON
+==================================================
+
+Create a persistent floating BOOK NOW button.
+
+Desktop:
+bottom-right.
+
+Mobile:
+fixed bottom CTA.
+
+It should have:
+
+gold border
+black background
+subtle glow
+hover animation
+
+When clicked, smoothly open the booking interface.
+
+==================================================
+11. WHATSAPP CTA
+==================================================
+
+Add a floating WhatsApp/contact action.
+
+Do NOT invent a phone number.
+
+Create a single editable configuration variable:
+
+WHATSAPP_NUMBER
+
+so the real salon number can be added later.
+
+The button should open WhatsApp with a pre-filled booking message.
+
+==================================================
+12. SMART BOOKING EXPERIENCE
+==================================================
+
+Improve the booking form.
+
+Step 1:
+SELECT SERVICE
+
+Step 2:
+SELECT DATE
+
+Step 3:
+SELECT TIME
+
+Step 4:
+CUSTOMER DETAILS
+
+Step 5:
+CONFIRM BOOKING
+
+Show a premium progress indicator.
+
+Example:
+
+01 SERVICE
+02 DATE
+03 TIME
+04 DETAILS
+
+After submission:
+
+Show an elegant success animation.
+
+Do not claim that a real appointment was confirmed unless a backend/API is actually connected.
+
+==================================================
+13. SERVICES + PRICING
+==================================================
+
+Create a premium pricing section.
+
+Make pricing data editable from one file.
+
+Example:
+
+Haircut
+₹____
+
+Hair Styling
+₹____
+
+Beard Grooming
+₹____
+
+Facial
+₹____
+
+Bridal Makeup
+₹____
+
+Hair Color
+₹____
+
+If prices are not provided, show “Price on consultation” rather than inventing prices.
+
+==================================================
+14. REVIEWS
+==================================================
+
+Create an elegant testimonials section.
+
+Use realistic layout but DO NOT fabricate fake verified reviews.
+
+Create editable testimonial data.
+
+Design:
+
+large quotation
+customer name
+service
+optional rating
+
+Make it easy to replace placeholder content with real reviews.
+
+==================================================
+15. INSTAGRAM STYLE SECTION
+==================================================
+
+Create:
+
+FOLLOW THE ROOTS
+
+Use a visual social-media-style grid using uploaded salon images.
+
+Add:
+
+FOLLOW US ON INSTAGRAM
+
+Do not invent the Instagram URL.
+
+Keep the URL editable in configuration.
+
+==================================================
+16. PREMIUM MICRO-INTERACTIONS
+==================================================
+
+Add sophisticated micro-interactions:
+
+- button magnetic movement
+- gold underline animation
+- image distortion on hover
+- text reveal
+- smooth card tilt
+- glowing borders
+- subtle shadows
+- hover sound-ready architecture
+- smooth page transitions
+
+Avoid excessive animations.
+
+Everything should feel expensive and intentional.
+
+==================================================
+17. MOBILE EXPERIENCE
+==================================================
+
+Mobile must NOT simply be a smaller desktop version.
+
+Create a dedicated mobile experience.
+
+Optimize:
+- hero video
+- 3D
+- fire particles
+- navigation
+- gallery
+- booking
+- typography
+
+Use reduced particle counts on mobile.
+
+Make sure:
+- no horizontal scrolling
+- no overlapping text
+- no broken images
+- buttons are easy to tap
+- video doesn't cause layout issues
+
+==================================================
+18. PERFORMANCE MODE
+==================================================
+
+Create adaptive rendering.
+
+If device/GPU is weak:
+
+reduce:
+- particle count
+- WebGL effects
+- blur
+- fire complexity
+- 3D movement
+
+If device is powerful:
+
+enable full cinematic experience.
+
+The website must remain fast.
+
+==================================================
+19. SEO + BUSINESS READY
+==================================================
+
+Add:
+
+proper page title:
+ROOTS SALON — Premium Beauty & Grooming Experience
+
+Meta description:
+Premium salon experience by Roots Salon — hair, beauty, grooming and bridal services.
+
+Add:
+- semantic HTML
+- accessible buttons
+- image alt text
+- Open Graph metadata
+- favicon using Roots logo
+- clean URLs
+- proper heading hierarchy
+
+==================================================
+20. CONFIGURATION FILE
+==================================================
+
+Create:
+
+src/data/salonConfig.js
+
+Put all easily changeable business information there:
+
+salonName
+tagline
+address
+phone
+whatsapp
+email
+instagram
+googleMaps
+openingHours
+services
+prices
+socialLinks
+
+Do not hardcode business information throughout components.
+
+==================================================
+FINAL VISUAL GOAL
+==================================================
+
+The final website should feel like:
+
+A LUXURY SALON WEBSITE
++
+A CINEMATIC BRAND FILM
++
+A LIVE 3D EXPERIENCE
++
+A PREMIUM BOOKING PLATFORM
+
+The user should feel like they are ENTERING the Roots Salon world, not simply browsing a website.
+
+Most important visual elements:
+
+BLACK BACKGROUND
+GOLDEN LIGHT
+GOLDEN ROOTS
+SUBTLE FIRE
+CINEMATIC VIDEO
+3D DEPTH
+LUXURY TYPOGRAPHY
+REAL SALON IMAGES
+SMOOTH SCROLLING
+
+Make the experience polished enough to use as a premium client portfolio project.
+
+After implementing everything, test the complete website and fix all visual bugs, console errors, broken assets, responsive issues and animation conflicts.

@@ -1,6 +1,6 @@
-# [Project name]
+# Roots Salon
 
-_Replace the heading above with the project's name, and this line with one sentence describing what this app does for users._
+An immersive, premium salon website for Roots Salon, combining cinematic brand storytelling with service discovery and appointment requests.
 
 ## Run & Operate
 
@@ -22,23 +22,35 @@ _Replace the heading above with the project's name, and this line with one sente
 
 ## Where things live
 
-_Populate as you build — short repo map plus pointers to the source-of-truth file for DB schema, API contracts, theme files, etc._
+- `artifacts/roots-salon/` — deployable React/Vite website and its editable salon configuration
+- `artifacts/mockup-sandbox/src/components/mockups/roots-salon/CinematicHome.tsx` — live canvas design preview
+- `attached_assets/` — provided Roots Salon photography
+- `artifacts/roots-salon/src/data/salonConfig.js` — source of truth for business details, service copy, pricing, social links, and editable reviews
 
 ## Architecture decisions
 
-_Populate as you build — non-obvious choices a reader couldn't infer from the code (3-5 bullets)._
+- The first release is frontend-only: the booking flow submits a request locally and never claims an appointment is confirmed.
+- Business contact details, WhatsApp, Instagram, pricing, and review content remain editable configuration values so no contact information is invented.
+- The cinematic layer uses CSS and lightweight browser effects with responsive reductions rather than requiring a video, WebGL, or external media service.
+- The provided salon photography is used as the primary visual language across the hero, tour, transformation, and gallery experiences.
 
 ## Product
 
-_Describe the high-level user-facing capabilities of this app once they exist._
+- “Enter the Roots” introductory interaction with a skippable cinematic reveal
+- Service explorer for hair, beauty, grooming, and bridal
+- Before/after transformation slider and clickable salon tour hotspots
+- Premium gallery lightbox, floating booking action, WhatsApp-ready contact action, and five-step booking request flow
+- Responsive mobile-specific presentation, custom desktop cursor, motion reduction support, and SEO metadata
 
 ## User preferences
 
-_Populate as you build — explicit user instructions worth remembering across sessions._
+No additional preferences recorded.
 
 ## Gotchas
 
-_Populate as you build — sharp edges, "always run X before Y" rules._
+- Add the real WhatsApp number, Instagram URL, and other business details only in `src/data/salonConfig.js`.
+- Do not turn the booking request success state into a confirmed appointment until a real booking backend or calendar integration exists.
+- The website workflow owns the root preview; the mockup sandbox owns the isolated canvas preview.
 
 ## Pointers
 
