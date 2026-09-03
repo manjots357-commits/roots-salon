@@ -151,7 +151,7 @@ function App() {
         </div>
         <div className="hero-copy">
           <div className="hero-kicker eyebrow reveal">Welcome to Roots</div>
-          <h1 id="hero-heading" className="display reveal delay-1 font-extrabold text-justify">Come for the<br /><em>ritual.</em></h1>
+          <h1 id="hero-heading" className="display reveal delay-1 font-extrabold text-justify text-[84px]">Come for the<br /><em>ritual.</em></h1>
           <p className="hero-sub reveal delay-2 text-foreground">An immersive beauty and grooming house where every detail is held in golden light.</p>
           <div className="font-normal bg-[#f0ebe000] opacity-[1] text-left">
             <button className="gold-button solid font-extrabold justify-center items-center flex-row text-left text-[12px]" type="button" onClick={() => openBooking()} data-testid="button-hero-book">Book your ritual <ArrowUpRight size={14} /></button>
