@@ -1,0 +1,114 @@
+FIX ONLY THE HERO VIDEO COMPOSITION. DO NOT MODIFY THE REST OF THE WEBSITE.
+
+I reviewed the current result and the video composition is NOT correct.
+
+CURRENT PROBLEMS:
+- The video looks like a black rectangular card.
+- The actual Golden Tree/Roots content appears too small inside the video.
+- The main heading “Come for the ritual.” overlaps the video.
+- The video does not feel like the main cinematic hero visual.
+- The salon background and video are competing visually.
+
+FIX IT LIKE THIS:
+
+1. Create a clean two-column hero composition.
+
+LEFT SIDE:
+- “WELCOME TO ROOTS”
+- “Come for the ritual.”
+- description
+- BOOK YOUR RITUAL
+- EXPLORE THE HOUSE
+
+RIGHT SIDE:
+- LARGE GOLDEN TREE VIDEO
+
+The left text must NEVER overlap the video.
+
+2. Make the video approximately:
+width: 50vw–55vw
+height: 70vh–75vh
+
+Position it on the right side and vertically center it.
+
+3. IMPORTANT:
+The actual content inside the uploaded video must appear LARGE.
+
+Do NOT simply increase the outer container while leaving the video content visually tiny.
+
+Inspect the uploaded video aspect ratio and scale it correctly.
+
+4. Use the correct object-fit strategy.
+
+If object-fit: contain creates too much empty black space, do NOT use contain.
+
+Instead, intelligently crop/scale the video so the Golden Tree + ROOTS + SALON + ESTABLISHED IN 2017 remain clearly visible.
+
+The important branding inside the video must NOT be cropped away.
+
+5. Remove the heavy rectangular card appearance.
+
+The video should feel like a floating cinematic portal/window rather than a UI card.
+
+Use:
+- subtle rounded corners
+- very thin gold edge
+- soft gold glow
+- cinematic shadow
+- subtle depth
+- no heavy border
+
+6. The video should visually extend beyond the normal content grid slightly.
+
+Make it feel immersive and 3D.
+
+7. Add subtle mouse parallax:
+When the mouse moves, the video should move 8–15px in the opposite direction.
+
+Keep it smooth and subtle.
+
+8. Add a very subtle golden glow behind the video.
+
+9. The video must remain:
+- autoplay
+- muted
+- loop
+- playsInline
+
+10. VERY IMPORTANT:
+The text “Come for the ritual.” must NEVER overlap the video at any viewport size.
+
+Maintain proper spacing between the left text column and right video.
+
+11. Keep the salon background darkened behind the hero so the video becomes the primary visual focus.
+
+12. Do NOT change:
+- navbar
+- services
+- gallery
+- contact
+- footer
+- other sections
+- typography system
+- buttons
+
+ONLY fix the hero video composition.
+
+FINAL VISUAL GOAL:
+
+LEFT:
+Elegant Roots Salon typography and CTA
+
+RIGHT:
+Large cinematic Golden Tree video
+
+The result should look like a premium luxury fashion/salon website, NOT a website with a video card.
+
+After implementation, check the hero at:
+1440px desktop
+1920px desktop
+1024px tablet
+768px tablet
+390px mobile
+
+Make sure the video never overlaps the hero text and the Roots/Salon/Established in 2017 branding remains clearly visible.

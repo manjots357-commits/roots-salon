@@ -65,6 +65,12 @@ function App() {
   const activeService = salonConfig.services.find((service) => service.id === selectedService) ?? salonConfig.services[0];
   const imageForService = serviceImages[activeService.image as keyof typeof serviceImages];
   const introRef = useRef<HTMLDivElement>(null);
+  const videoShiftX = cursor.active && typeof window !== 'undefined'
+    ? Math.max(-14, Math.min(14, (window.innerWidth / 2 - cursor.x) / 70))
+    : 0;
+  const videoShiftY = cursor.active && typeof window !== 'undefined'
+    ? Math.max(-12, Math.min(12, (window.innerHeight / 2 - cursor.y) / 70))
+    : 0;
 
   useEffect(() => {
     try {
@@ -158,7 +164,11 @@ function App() {
             <button className="underline-link text-[12px] font-bold" type="button" onClick={() => scrollTo('services')} data-testid="button-hero-explore">Explore the house</button>
           </div>
         </div>
-        <div className="hero-video-wrap" data-testid="hero-golden-tree-video">
+        <div
+          className="hero-video-wrap"
+          style={{ '--video-shift-x': `${videoShiftX}px`, '--video-shift-y': `${videoShiftY}px` } as CSSProperties}
+          data-testid="hero-golden-tree-video"
+        >
           <div className="hero-video-shell">
             <video className="hero-video" autoPlay muted loop playsInline preload="metadata" aria-label="Golden tree swaying in warm light">
               <source src={goldenTreeVideo} type="video/mp4" />
