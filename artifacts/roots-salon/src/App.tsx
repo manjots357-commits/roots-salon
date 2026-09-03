@@ -119,7 +119,6 @@ function App() {
         </div>
         <button className="ghost-button intro-skip" type="button" onClick={dismissIntro} data-testid="button-skip-intro">Skip intro</button>
       </div>
-
       <div className="cursor-dot" style={{ left: cursor.x, top: cursor.y, width: cursor.active ? 11 : 7, height: cursor.active ? 11 : 7 }} aria-hidden="true" />
       <header className="site-nav" data-testid="site-navigation">
         <button className="brand" onClick={() => scrollTo('top')} data-testid="button-brand" aria-label="Return to top">
@@ -142,7 +141,6 @@ function App() {
         ))}
         <button className="gold-button solid" type="button" onClick={() => { setMenuOpen(false); openBooking(); }} data-testid="mobile-book-now">Book now</button>
       </nav>
-
       <section className="hero" id="top" aria-labelledby="hero-heading">
         <div className="hero-bg"><img src={exteriorImage} alt="Warmly lit Roots Salon exterior" /></div>
         <div className="hero-embers" aria-hidden="true">
@@ -152,16 +150,15 @@ function App() {
         </div>
         <div className="hero-copy">
           <div className="hero-kicker eyebrow reveal">Welcome to Roots</div>
-          <h1 id="hero-heading" className="display reveal delay-1">Come for the<br /><em>ritual.</em></h1>
-          <p className="hero-sub reveal delay-2">An immersive beauty and grooming house where every detail is held in golden light.</p>
-          <div className="hero-actions reveal delay-3">
-            <button className="gold-button solid" type="button" onClick={() => openBooking()} data-testid="button-hero-book">Book your ritual <ArrowUpRight size={14} /></button>
-            <button className="underline-link" type="button" onClick={() => scrollTo('services')} data-testid="button-hero-explore">Explore the house</button>
+          <h1 id="hero-heading" className="display reveal delay-1 font-extrabold text-justify">Come for the<br /><em>ritual.</em></h1>
+          <p className="hero-sub reveal delay-2 text-foreground">An immersive beauty and grooming house where every detail is held in golden light.</p>
+          <div className="text-right font-normal bg-[#f0ebe000] opacity-[1]">
+            <button className="gold-button solid font-extrabold justify-center items-center flex-row text-[15px]" type="button" onClick={() => openBooking()} data-testid="button-hero-book">Book your ritual <ArrowUpRight size={14} /></button>
+            <button className="underline-link text-[12px]" type="button" onClick={() => scrollTo('services')} data-testid="button-hero-explore">Explore the house</button>
           </div>
         </div>
         <div className="scroll-cue" aria-hidden="true">Scroll to enter</div>
       </section>
-
       <section className="manifesto section-pad" aria-labelledby="manifesto-heading">
         <div className="section-shell manifesto-grid">
           <div>
@@ -178,7 +175,6 @@ function App() {
           </div>
         </div>
       </section>
-
       <section className="services section-pad" id="services" aria-labelledby="services-heading">
         <div className="section-shell">
           <div className="services-head">
@@ -204,7 +200,6 @@ function App() {
           </div>
         </div>
       </section>
-
       <section className="transformation section-pad" id="transformation" aria-labelledby="transformation-heading">
         <div className="section-shell">
           <div className="transformation-head">
@@ -220,7 +215,6 @@ function App() {
           </div>
         </div>
       </section>
-
       <section className="tour section-pad" id="space" aria-labelledby="space-heading">
         <div className="section-shell tour-layout">
           <div className="tour-intro">
@@ -239,7 +233,6 @@ function App() {
           </div>
         </div>
       </section>
-
       <section className="gallery section-pad" id="gallery" aria-labelledby="gallery-heading">
         <div className="section-shell">
           <div className="gallery-head"><div><p className="eyebrow">05 / In the light</p><h2 id="gallery-heading" className="display">A living<br /><em>gallery.</em></h2></div><p className="eyebrow">Drag / discover</p></div>
@@ -249,7 +242,6 @@ function App() {
           <div className="gallery-foot"><span>05 frames from Roots</span><button type="button" className="underline-link" onClick={() => setLightbox(0)} data-testid="button-view-full-gallery">View full gallery</button></div>
         </div>
       </section>
-
       <section className="reviews section-pad" aria-labelledby="reviews-heading">
         <div className="section-shell reviews-layout">
           <div><p className="eyebrow">06 / In their words</p><h2 id="reviews-heading" className="display">Leave<br />lighter.</h2><p className="review-note">Reviews are intentionally editable placeholders until real, verified client words are added.</p></div>
@@ -260,7 +252,6 @@ function App() {
           </div>
         </div>
       </section>
-
       <section className="social section-pad" aria-labelledby="social-heading">
         <div className="section-shell">
           <div className="social-head"><div><p className="eyebrow">07 / After hours</p><h2 id="social-heading" className="display">Follow<br /><em>the roots.</em></h2></div><a className="gold-button" href={salonConfig.instagram || undefined} target="_blank" rel="noreferrer" onClick={(event) => { if (!salonConfig.instagram) event.preventDefault(); }} aria-disabled={!salonConfig.instagram} data-testid="link-instagram">Follow us on Instagram <ArrowUpRight size={14} /></a></div>
@@ -269,14 +260,12 @@ function App() {
           </div>
         </div>
       </section>
-
       <section className="booking section-pad" id="booking" aria-labelledby="booking-heading">
         <div className="section-shell booking-layout">
           <div className="booking-lead"><p className="eyebrow">08 / Your ritual</p><h2 id="booking-heading" className="display">Make<br />an <em>entrance.</em></h2><p>Tell us what you are dreaming of. We will be in touch to find the right artist and time for you.</p>{whatsappNotice && <p className="eyebrow" role="status" data-testid="status-whatsapp-placeholder">WhatsApp number to be added — please use the request form.</p>}</div>
           <BookingPanel bookingOpen={bookingOpen} booking={booking} setBooking={setBooking} step={bookingStep} setStep={setBookingStep} sent={bookingSent} setSent={setBookingSent} close={() => setBookingOpen(false)} onOpen={() => setBookingOpen(true)} />
         </div>
       </section>
-
       <footer className="site-footer">
         <div className="section-shell footer-grid">
           <div className="footer-brand"><strong>ROOTS</strong><p>{salonConfig.tagline}</p></div>
@@ -284,12 +273,10 @@ function App() {
           <div className="footer-col"><h4>Say hello</h4><p>{salonConfig.phone}</p><p>{salonConfig.email}</p><button type="button" onClick={openWhatsApp} data-testid="button-footer-whatsapp">WhatsApp enquiry <MessageCircle size={13} /></button></div>
         </div>
       </footer>
-
       <div className="floating-actions" aria-label="Quick actions">
         <button className="float-action" type="button" onClick={openWhatsApp} aria-label="Open WhatsApp enquiry" data-testid="button-whatsapp"><MessageCircle size={19} /></button>
         <button className="float-action book" type="button" onClick={() => openBooking()} data-testid="button-floating-book">Book now <ArrowUpRight size={14} /></button>
       </div>
-
       {lightbox !== null && <div className="modal-backdrop" role="dialog" aria-modal="true" aria-label="Roots gallery" onClick={() => setLightbox(null)} data-testid="gallery-lightbox"><div className="lightbox" onClick={(event) => event.stopPropagation()}><button className="modal-close" type="button" onClick={() => setLightbox(null)} aria-label="Close gallery" data-testid="button-close-gallery"><X size={18} /></button><img src={galleryItems[lightbox].image} alt={galleryItems[lightbox].alt} /><div className="lightbox-caption">{galleryItems[lightbox].title}</div></div></div>}
     </main>
   );
