@@ -6,6 +6,7 @@ import beautyImage from '@assets/beauty_1788431795126.png';
 import groomingImage from '@assets/grooming_1788431795126.png';
 import interiorImage from '@assets/interior_1788431795125.png';
 import exteriorImage from '@assets/salon-exterior_-_Copy_1788431795124.png';
+import goldenTreeVideo from '@assets/Golden_tree_swaying_on_fabric_202609031500_-_Copy_1788432573509.mp4';
 import galleryImage from '@assets/salon-gallery_1788431795125.png';
 import academyImage from '@assets/academy_1788431795125.png';
 // @ts-expect-error The business configuration intentionally stays as an editable JavaScript file.
@@ -155,6 +156,14 @@ function App() {
           <div className="font-normal bg-[#f0ebe000] opacity-[1] text-left">
             <button className="gold-button solid font-extrabold justify-center items-center flex-row text-left text-[12px]" type="button" onClick={() => openBooking()} data-testid="button-hero-book">Book your ritual <ArrowUpRight size={14} /></button>
             <button className="underline-link text-[12px] font-bold" type="button" onClick={() => scrollTo('services')} data-testid="button-hero-explore">Explore the house</button>
+          </div>
+        </div>
+        <div className="hero-video-wrap" data-testid="hero-golden-tree-video">
+          <div className="hero-video-shell">
+            <video className="hero-video" autoPlay muted loop playsInline preload="metadata" aria-label="Golden tree swaying in warm light">
+              <source src={goldenTreeVideo} type="video/mp4" />
+            </video>
+            <span className="hero-video-label">Golden roots in motion</span>
           </div>
         </div>
         <div className="scroll-cue" aria-hidden="true">Scroll to enter</div>
