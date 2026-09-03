@@ -1,0 +1,54 @@
+ONLY MODIFY THE HERO VIDEO SECTION. DO NOT CHANGE ANY OTHER PART OF THE WEBSITE.
+
+The current circular video on the right side of the hero is too small.
+
+I want you to make the video MUCH LARGER and make it the main visual focus of the hero.
+
+IMPORTANT:
+
+1. REMOVE the small/circular presentation style OR make the circular frame dramatically larger.
+2. The uploaded Golden Tree video must be clearly visible in a LARGE area on the right/center-right of the hero.
+3. Increase the video size as much as possible WITHOUT covering or destroying the main hero typography.
+4. The video must remain fully visible inside its container.
+5. Do NOT crop important parts of the video.
+6. The ROOTS SALON branding/logo inside the video must be clearly visible.
+7. The text:
+   “ROOTS”
+   “SALON”
+   “ESTABLISHED IN 2017”
+   should be clearly readable whenever those parts appear in the video.
+8. Make the video container approximately 45–55vw wide on desktop and around 55–65vh tall, adapting responsively.
+9. Keep a premium gold border/glow around the video, but make the border subtle.
+10. Remove the current “Golden roots in motion” label if it interferes with the video.
+11. Keep the video centered vertically in the hero visual area.
+12. Use object-fit: contain instead of aggressive object-fit: cover if needed, so the FULL VIDEO composition can be seen.
+13. Do NOT stretch or distort the video.
+14. Keep autoplay, muted, loop and playsInline.
+15. Make the video visually dominant, but ensure the left-side hero heading and CTA remain completely readable.
+16. Add a subtle cinematic shadow/glow behind the video to separate it from the salon background.
+17. On hover, add only a very subtle 3D scale/parallax effect.
+18. Do NOT change the navbar, typography, buttons, sections, gallery, services, footer, or any other existing design.
+
+DESIRED HERO COMPOSITION:
+
+LEFT:
+WELCOME TO ROOTS
+Come for the
+ritual.
+Description
+BOOK YOUR RITUAL
+EXPLORE THE HOUSE
+
+RIGHT / CENTER-RIGHT:
+A LARGE VERSION OF THE UPLOADED GOLDEN TREE VIDEO
+
+The video should be large enough that when the visitor looks at the hero, they can clearly see the complete Roots Salon golden-tree branding and the “ESTABLISHED IN 2017” text in the video.
+
+IMPORTANT:
+The video is the hero's primary visual element now.
+
+Do NOT make it full-screen background.
+Do NOT put it back into a tiny circle.
+Do NOT crop it so much that the Roots logo/tree/Established in 2017 disappears.
+
+Make ONLY this video section adjustment and preserve the existing design exactly.

@@ -163,7 +163,6 @@ function App() {
             <video className="hero-video" autoPlay muted loop playsInline preload="metadata" aria-label="Golden tree swaying in warm light">
               <source src={goldenTreeVideo} type="video/mp4" />
             </video>
-            <span className="hero-video-label">Golden roots in motion</span>
           </div>
         </div>
         <div className="scroll-cue" aria-hidden="true">Scroll to enter</div>
