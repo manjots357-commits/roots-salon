@@ -152,9 +152,9 @@ function App() {
           <div className="hero-kicker eyebrow reveal">Welcome to Roots</div>
           <h1 id="hero-heading" className="display reveal delay-1 font-extrabold text-justify">Come for the<br /><em>ritual.</em></h1>
           <p className="hero-sub reveal delay-2 text-foreground">An immersive beauty and grooming house where every detail is held in golden light.</p>
-          <div className="text-right font-normal bg-[#f0ebe000] opacity-[1]">
-            <button className="gold-button solid font-extrabold justify-center items-center flex-row text-[15px]" type="button" onClick={() => openBooking()} data-testid="button-hero-book">Book your ritual <ArrowUpRight size={14} /></button>
-            <button className="underline-link text-[12px]" type="button" onClick={() => scrollTo('services')} data-testid="button-hero-explore">Explore the house</button>
+          <div className="font-normal bg-[#f0ebe000] opacity-[1] text-left">
+            <button className="gold-button solid font-extrabold justify-center items-center flex-row text-left text-[12px]" type="button" onClick={() => openBooking()} data-testid="button-hero-book">Book your ritual <ArrowUpRight size={14} /></button>
+            <button className="underline-link text-[12px] font-bold" type="button" onClick={() => scrollTo('services')} data-testid="button-hero-explore">Explore the house</button>
           </div>
         </div>
         <div className="scroll-cue" aria-hidden="true">Scroll to enter</div>
@@ -275,7 +275,7 @@ function App() {
       </footer>
       <div className="floating-actions" aria-label="Quick actions">
         <button className="float-action" type="button" onClick={openWhatsApp} aria-label="Open WhatsApp enquiry" data-testid="button-whatsapp"><MessageCircle size={19} /></button>
-        <button className="float-action book" type="button" onClick={() => openBooking()} data-testid="button-floating-book">Book now <ArrowUpRight size={14} /></button>
+        <button className="float-action book text-left" type="button" onClick={() => openBooking()} data-testid="button-floating-book">Book now <ArrowUpRight size={14} /></button>
       </div>
       {lightbox !== null && <div className="modal-backdrop" role="dialog" aria-modal="true" aria-label="Roots gallery" onClick={() => setLightbox(null)} data-testid="gallery-lightbox"><div className="lightbox" onClick={(event) => event.stopPropagation()}><button className="modal-close" type="button" onClick={() => setLightbox(null)} aria-label="Close gallery" data-testid="button-close-gallery"><X size={18} /></button><img src={galleryItems[lightbox].image} alt={galleryItems[lightbox].alt} /><div className="lightbox-caption">{galleryItems[lightbox].title}</div></div></div>}
     </main>
